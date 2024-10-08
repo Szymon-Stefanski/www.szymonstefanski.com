@@ -74,11 +74,15 @@ body {
 
 .hero-image {
   display: flex;
-  justify-content: flex-end; /* Wypycha obrazek w prawo */
-  align-items: center; /* Wypośrodkowuje obrazek w pionie */
-  width: 300px;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#big_logo {
+  width: 500px;
   height: auto;
-  margin: 10px;
+  max-width: 100%;
+  margin-right: 20px;
 }
 
 .margin-right-sm {
