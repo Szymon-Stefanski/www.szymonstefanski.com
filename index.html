@@ -35,19 +35,23 @@
       </nav>
     </header>
     <main>
-      <section class="section-description" id="aboutme">
+      <p id="aboutme"></p>
+      <section class="section-description">
         <div class="description">
           <div class="description-text-box">
-            <h1 class="heading-primary">Szymon Stefański</h1>
-            <p class="description-description">
-              Hello there! My name is Szymon and I'm from Poland. I'm 3rd year
-              student of a Computer Science at the Polish-Japanese Academy of
-              Information Technology. I am a naturally friendly person who can
-              talk about everything and nothing. I'm interested in programming,
-              databases and AI. I am currently seeking an internship or junior
-              position to apply my knowledge in a professional setting and
-              continue growing as a software engineer.
+            <h1 class="heading-primary">
+              Szymon Stefański
+              <span class="speech-bubble">Hello there!</span>
+            </h1>
+            <p class="description-am">
+              <span class="jse">Junior Software Engineer</span>
+              and
+              <br />
+              <span class="cs">Computer Science Student</span>
             </p>
+            <a href="#" class="primary-btn" data-text="Hire Me">
+              <p>Resume</p>
+            </a>
           </div>
           <div class="hero-image">
             <img id="big_logo" src="images/me.png" alt="me" />
@@ -55,7 +59,37 @@
         </div>
       </section>
 
-      <section class="section-projects" id="projects">
+      <section class="section-projects">
+        <h1 class="title">About me</h1>
+        <div class="container grid grid--1-cols">
+          <div class="decorative-line"></div>
+          <p class="description-description">
+            Nice too meet you! My name is Szymon and I'm from Poland. I'm 3rd
+            year student of a Computer Science at the Polish-Japanese Academy of
+            Information Technology. I am a naturally friendly person who can
+            talk about everything and nothing. I'm interested in programming,
+            databases and AI. I am currently seeking an internship or junior
+            position to apply my knowledge in a professional setting and
+            continue growing as a software engineer.
+          </p>
+        </div>
+        <div class="container grid grid--1-cols">
+          <p class="description-description">
+            I have over four and half years of experience as a Commercial
+            Advisor at Castorama. I provided customer service and product
+            recommendations, ensuring a high level of client satisfaction. I
+            collaborated with team members to optimize store operations and
+            inventory management, while also assisting in maintaining stock
+            levels using SAP and database systems to ensure accurate tracking
+            and reporting. This role allowed me to develop strong
+            problem-solving, communication, and teamwork skills, which I now
+            apply in technical projects.
+          </p>
+        </div>
+        <p id="projects"></p>
+      </section>
+
+      <section class="section-projects">
         <h1 class="title">Projects</h1>
         <div class="container grid grid--1-cols">
           <div class="decorative-line"></div>
@@ -64,20 +98,26 @@
           <div class="projects"><strong>PROJECT 3 - COMING SOON</strong></div>
           <div class="projects"><strong>PROJECT 4 - COMING SOON</strong></div>
         </div>
+        <p id="certs"></p>
       </section>
 
-      <section class="section-certs" id="certs">
+      <section class="section-certs">
         <h1 class="title">Certs</h1>
         <div class="container grid grid--1-cols">
           <div class="decorative-line"></div>
         </div>
         <div class="container grid grid--2-cols">
           <div class="certs">
-            <img
-              class="certs-img"
-              src="images/1Z0-071.png"
-              alt="Oracle 1Z0-071 Certification"
-            />
+            <a
+              href="https://catalog-education.oracle.com/ords/certview/sharebadge?id=EDE20AFA35017D4F7632FC664EF137600242F46E7B9A4000B9DF911388D2D296"
+              target="_blank"
+            >
+              <img
+                class="certs-img"
+                src="images/1Z0-071.png"
+                alt="Oracle 1Z0-071 Certification"
+              />
+            </a>
             <div class="certs-text">
               <strong>1Z0-071</strong><br />
               An Oracle Database SQL Certified Associate demonstrates
@@ -91,25 +131,38 @@
             </div>
           </div>
           <div class="certs">
-            <img
-              class="certs-img"
-              src="images/1Z0-1085-24.png"
-              alt="Oracle Cloud Certification"
-            />
+            <a
+              href="https://catalog-education.oracle.com/ords/certview/sharebadge?id=4506F9964E8E7D87DDF926D13FDFE70BB1F6EEB64E2CA56A246275018C3F979B"
+              target="_blank"
+            >
+              <img
+                class="certs-img"
+                src="images/1Z0-1085-24.png"
+                alt="Oracle Cloud Certification"
+              />
+            </a>
             <div class="certs-text">
               <strong>1Z0-1085-24</strong><br />
               The Oracle Cloud Infrastructure (OCI) Foundations certification is
               for individuals who intend to demonstrate fundamental knowledge of
               public cloud services provided by Oracle Cloud Infrastructure
-              (OCI).
+              (OCI). This certification is for candidates with non-technical
+              backgrounds, such as those involved in selling or procuring cloud
+              solutions, as well as those with a technical background who want
+              to validate their foundational-level knowledge around core OCI
+              services.
             </div>
           </div>
           <div class="certs">
-            <img
-              class="certs-img"
-              src="images/CCNAv7.png"
-              alt="CCNA Certification"
-            />
+            <a
+              href="https://www.netacad.com/certificates?issuanceId=97620356-ab66-4aa8-a746-101ccba5c1a9"
+            >
+              <img
+                class="certs-img"
+                src="images/CCNAv7.png"
+                alt="CCNA Certification"
+              />
+            </a>
             <div class="certs-text">
               <strong>CCNAv7: Introduction to Networks</strong><br />
               The CCNA v7 Introduction to Networks (ITN) - The first course in
@@ -121,11 +174,15 @@
             </div>
           </div>
           <div class="certs">
-            <img
-              class="certs-img"
-              src="images/red_hat.jpg"
-              alt="Red Hat Linux Certification"
-            />
+            <a
+              href="https://rha.ole.redhat.com/rha/api/certificates/attendance/uuid/8693a916-2e5d-41c4-aa9d-dcb454493f4e"
+            >
+              <img
+                class="certs-img"
+                src="images/red_hat.jpg"
+                alt="Red Hat Linux Certification"
+              />
+            </a>
             <div class="certs-text">
               <strong>RH104: Getting Started with Linux Fundamentals</strong
               ><br />
