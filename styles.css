@@ -33,7 +33,7 @@ body {
 .description {
   max-width: 130rem;
   margin: 0 auto;
-  padding: 0 3.2rem;
+  padding: 3.2rem 3.2rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 9.6rem 0;
@@ -55,31 +55,8 @@ body {
   margin-bottom: 4.8rem;
   text-align: justify;
   padding: 15px;
-  background-color: rgb(247, 234, 252);
+  background-color: rgb(227, 237, 255);
   border-radius: 10px;
-}
-
-.btn:link,
-.btn:visited {
-  display: inline-block;
-  font-size: 2rem;
-  font-weight: 600;
-  padding: 1.6rem 3.2rem;
-  border-radius: 150px;
-  transition: all 1s;
-}
-
-.btn--outline:link,
-.btn--outline:visited {
-  color: black;
-  border: solid 3px rgb(0, 252, 42);
-}
-
-.btn--outline:hover,
-.btn--outline:active {
-  background-color: rgb(0, 252, 42);
-  color: #fff;
-  box-shadow: 0 0 0 3px;
 }
 
 .hero-image {
@@ -89,11 +66,10 @@ body {
 }
 
 #big_logo {
-  width: 500px;
-  height: auto;
-  max-width: 60%;
-  margin-right: 20px;
-  border-radius: 20px;
+  height: 350px;
+  width: 350px;
+  object-fit: cover;
+  border-radius: 10%;
   border: 2px solid rgb(150, 0, 0);
 }
 
@@ -108,6 +84,11 @@ body {
   width: 100%;
   background-color: rgb(255, 255, 255);
   z-index: 1000;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.header.sticky {
+  box-shadow: 10px 10px 5px rgba(43, 40, 40, 0.411);
 }
 
 .header .main-nav {
@@ -154,7 +135,6 @@ body {
 .section-projects {
   padding-bottom: 10rem;
   color: black;
-  background-color: rgb(237, 244, 255);
 }
 
 .projects {
@@ -163,9 +143,33 @@ body {
 }
 
 .title {
-  text-align: center;
+  text-align: left;
   font-size: 5rem;
-  padding: 6rem;
+  padding: 1rem 4rem;
+  max-width: 130rem;
+  margin: 0 auto;
+}
+
+.decorative-line {
+  display: flex;
+  align-items: center;
+}
+
+.decorative-line::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: rgb(255, 63, 63);
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.decorative-line::after {
+  content: "";
+  width: 100px;
+  height: 3px;
+  background-color: rgb(255, 0, 0);
+  display: inline-block;
 }
 
 .container {
@@ -201,9 +205,19 @@ body {
   align-items: center;
   gap: 2rem;
   text-align: center;
-  background-color: rgb(255, 144, 144);
+  background-color: rgb(227, 237, 255);
   padding: 15px;
   border-radius: 10px;
+  color: #000000;
+  margin-top: 20px;
+}
+
+.certs:hover {
+  background-color: rgb(159, 181, 255);
+  transition: 0.5s;
+  color: #fff;
+  box-shadow: 0 0 0 3px;
+  transform: translateY(-10px);
 }
 
 .certs-img {
@@ -212,7 +226,6 @@ body {
 }
 
 .certs-text {
-  color: #fff;
   font-size: 2rem;
   line-height: 1.8;
   max-width: 500px;
@@ -227,7 +240,7 @@ footer {
   font-size: 3.6rem;
   margin-top: auto;
   color: white;
-  background-color: rgb(150, 0, 0);
+  background-color: rgb(187, 100, 100);
 }
 
 .footer-text {
