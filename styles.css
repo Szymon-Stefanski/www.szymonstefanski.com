@@ -365,3 +365,50 @@ footer {
 .icon {
   color: rgb(255, 255, 255);
 }
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 2rem;
+  }
+
+  .grid--2-cols,
+  .grid--3-cols,
+  .grid--4-cols {
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .main-nav-list {
+    flex-direction: column;
+    gap: 1.6rem;
+  }
+
+  .description {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .heading-primary {
+    font-size: 3rem;
+  }
+
+  .description-am {
+    font-size: 2.4rem;
+    padding: 2rem;
+    text-align: justify;
+  }
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media (max-width: 400px) {
+  html {
+    font-size: 50%;
+  }
+}
