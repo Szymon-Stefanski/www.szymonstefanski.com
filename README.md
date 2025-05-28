@@ -2,7 +2,7 @@
 
 🌐 [www.szymonstefanski.com](https://www.szymonstefanski.com)
 
-This is my personal website created to showcase who I am, my skills, and selected projects. It's a place where I present my work, background, and ways to get in touch.
+This is my personal webpage created to showcase who I am, my skills, and selected projects. It's a place where I present my work, background, and ways to get in touch.
 
 ## 💻 Technologies Used
 
