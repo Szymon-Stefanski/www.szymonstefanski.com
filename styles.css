@@ -43,6 +43,7 @@ body {
 .grid--3-cols { grid-template-columns: repeat(3, 1fr); }
 .grid--4-cols { grid-template-columns: repeat(4, 1fr); }
 
+
 /* Header */
 .header {
   position: fixed;
@@ -91,6 +92,7 @@ body {
 
 .logo { height: 40px; width: auto; margin-right: 2rem; }
 
+
 /* Section Description / Hero */
 .section-description { padding: 12rem 0; }
 
@@ -121,7 +123,6 @@ body {
   justify-content: flex-end;
   align-items: center;
 }
-
 
 .speech-bubble {
   font-size: 2rem;
@@ -167,7 +168,7 @@ body {
 
 #big_logo { height: 350px; width: 350px; object-fit: cover; border-radius: 50%; }
 
-/* --- EFEKT KARTY Z TWOJEGO SCREENA --- */
+
 .description-description {
   margin-top: 5rem;
   font-size: 2rem;
@@ -176,16 +177,18 @@ body {
   padding: 3rem;
   background-color: #fff;
   border-radius: 8px;
-  border-left: 6px solid #c62828; /* Czerwona linia z boku */
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); /* Delikatny cień pod kartą */
+  border-left: 6px solid #c62828;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
   text-align: justify;
 }
+
 
 /* Titles and Lines */
 .title { font-size: 5rem; font-weight: 700; padding: 1rem 4rem; max-width: 130rem; margin: 0 auto; }
 .decorative-line { display: flex; align-items: center; margin-bottom: 2rem; }
 .decorative-line::before { content: ""; width: 10px; height: 10px; background-color: #c62828; border-radius: 50%; }
 .decorative-line::after { content: ""; width: 100px; height: 3px; background-color: #c62828; }
+
 
 /* Projects */
 .projects {
@@ -200,6 +203,7 @@ body {
 .projects:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
 .projects-description { font-size: 1.8rem; line-height: 1.6; color: #1a1a1a; }
 .projects-img { display: block; margin: 2rem auto; width: 90%; border-radius: 5px; }
+
 
 /* Certs */
 .section-certs { padding: 12rem 0; }
@@ -218,6 +222,7 @@ body {
 .certs-img { max-width: 300px; margin-bottom: 2rem; }
 .certs-text { font-size: 2rem; text-align: justify; }
 
+
 /* Footer */
 footer {
   padding: 6rem 2rem;
@@ -226,9 +231,8 @@ footer {
   margin-top: 10rem;
 }
 
-/* Przywrócenie rozmiaru ikonek */
 footer i {
-  font-size: 4rem; /* Duże ikony jak wcześniej */
+  font-size: 4rem;
   margin-bottom: 1rem;
 }
 
