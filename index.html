@@ -3,15 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Szymon Stefański - personal webpage" />
     <meta name="author" content="Szymon Stefański" />
     <meta name="robots" content="index, follow" />
     <meta property="og:title" content="Szymon Stefański - Software Engineer" />
     <meta property="og:description" content="Software Engineer & Student at PJATK. Sprawdź moje certyfikaty i projekty IT." />
     <meta property="og:image" content="https://www.szymonstefanski.com/images/personal/me.jpg" />
     <meta property="og:url" content="https://www.szymonstefanski.com/" />
-
-    <script src="backend/js_scripts"></script>
 
     <title>Szymon Stefański | Software Engineer | Python</title>
     <meta name="description" content="Student PJATK, programista Python z obsesją na punkcie czystego kodu i baz danych. Zamieniam złożone problemy w proste rozwiązania." />
@@ -31,15 +28,14 @@
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
+
   <body>
     <header class="header">
       <nav class="main-nav">
         <ul class="main-nav-list">
-          <img
-            class="logo"
-            src="images/personal/neural-network.png"
-            alt="Logo"
-          />
+          <li>
+            <img class="logo" src="images/personal/neural-network.png" alt="Szymon Stefański Logo" />
+          </li>
           <li><a class="main-nav-link" href="#aboutme">About me</a></li>
           <li><a class="main-nav-link" href="#projects">Projects</a></li>
           <li><a class="main-nav-link" href="#certs">Certs</a></li>
@@ -48,7 +44,6 @@
       </nav>
     </header>
     <main>
-      <p id="aboutme"></p>
       <section class="section-description">
         <div class="description">
           <div class="description-text-box">
@@ -71,13 +66,13 @@
             </a>
           </div>
           <div class="hero-image">
-            <img id="big_logo" src="images/personal/me.jpg" alt="me" />
+            <img id="big_logo" src="images/personal/me.jpg" alt="Szymon Stefański profile picture - Software Engineer" />
           </div>
         </div>
       </section>
 
-      <section class="section-projects">
-        <h1 class="title">About me</h1>
+      <section id="aboutme" class="section-aboutme">
+        <h2 class="title">About me</h2>
         <div class="container grid grid--1-cols">
           <div class="decorative-line"></div>
         </div>
@@ -104,11 +99,11 @@
         <p id="projects"></p>
       </section>
 
-      <section class="section-projects">
-        <h1 class="title">Projects</h1>
+      <section id="projects" class="section-projects">
+        <h2 class="title">Projects</h2>
         <div class="container grid grid--1-cols">
           <div class="decorative-line"></div>
-          <a href="https://github.com/Szymon-Stefanski/NBP_app">
+          <a href="https://github.com/Szymon-Stefanski/NBP_app" aria-label="View NBP App project source code on GitHub">
             <div class="projects">
               <p class="projects-description">
                 <strong>NBP app</strong><br />
@@ -121,14 +116,13 @@
                 <img
                   class="projects-img"
                   src="images/projects/nbp.png"
-                  alt="nbp"
+                  alt="Screenshot of NBP App - Currency exchange rate tracker developed with Python and Flask"
                 />
               </p>
             </div>
           </a>
-          <a
-            href="https://github.com/Szymon-Stefanski/university_database_project"
-          >
+          <a href="https://github.com/Szymon-Stefanski/university_database_project" 
+          aria-label="View University Database Project source code on GitHub">
             <div class="projects">
               <p class="projects-description">
                 <strong>University Database Project</strong><br />
@@ -143,14 +137,13 @@
                 <img
                   class="projects-img"
                   src="images/projects/udb.png"
-                  alt="udb"
+                  alt="Relational database schema and interface for the University Management System project"
                 />
               </p>
             </div>
           </a>
-          <a
-            href="https://github.com/Szymon-Stefanski/szymonstefanski.github.io"
-          >
+          <a href="https://github.com/Szymon-Stefanski/szymonstefanski.github.io" 
+          aria-label="View My Personal Webpage source code on GitHub">
             <div class="projects">
               <p class="projects-description">
                 <strong>My personal webpage</strong><br />
@@ -161,28 +154,17 @@
                 <img
                   class="projects-img"
                   src="images/projects/mywebpage.png"
-                  alt="my_webpage"
+                  alt="Preview of Szymon Stefański's personal portfolio website built with HTML, CSS and JavaScript"
                 />
               </p>
             </div>
-          </a>
-          <a href="https://github.com/Szymon-Stefanski">
-            <p class="projects-foot">
-              <strong
-                >You can see my other projects on my github account
-                Szymon-Stefanski
-              </strong>
-              <a class="projects-icon">
-                <i class="fab fa-github"></i>
-              </a>
-            </p>
           </a>
         </div>
         <p id="certs"></p>
       </section>
 
-      <section class="section-certs">
-        <h1 class="title">Certs</h1>
+      <section id="certs" class="section-certs">
+        <h2 class="title">Certs</h2>
         <div class="container grid grid--1-cols">
           <div class="decorative-line"></div>
         </div>
@@ -323,20 +305,20 @@
         </div>
       </section>
     </main>
-
     <footer id="contact">
       <p class="footer-text">Any questions? Please, contact me!</p>
       <br />
       <div class="container grid grid--3-cols">
-        <a class="icon" href="https://www.linkedin.com/in/szymon-stefanski/">
-          <i class="fab fa-linkedin"></i>
-          <p class="footer-text">szymon-stefanski</p>
-        </a>
-        <a class="icon" href="https://github.com/Szymon-Stefanski">
+        <a class="icon" href="https://github.com/Szymon-Stefanski" aria-label="View all my projects on GitHub" rel="noopener">
           <i class="fab fa-github"></i>
           <p class="footer-text">Szymon-Stefanski</p>
         </a>
-        <a class="icon" href="mailto:szymonstefanski1@gmail.com">
+
+        <a class="icon" href="https://www.linkedin.com/in/szymon-stefanski/" aria-label="LinkedIn Profile" rel="noopener">
+          <i class="fab fa-linkedin"></i>
+          <p class="footer-text">szymon-stefanski</p>
+        </a>
+        <a class="icon" href="mailto:szymonstefanski1@gmail.com" aria-label="Send me an email" rel="noopener">
           <i class="fas fa-envelope"></i>
           <p class="footer-text">szymonstefanski1@gmail.com</p>
         </a>
@@ -344,5 +326,6 @@
       <br />
       <p class="footer-text">© 2026 Szymon Stefański All rights reserved</p>
     </footer>
+    <script src="backend/scripts.js"></script>
   </body>
 </html>
